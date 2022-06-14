@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: #474444;
+    color: #d4d3d3;
+}
+
+header{
+    height: 10%;
+    position: sticky;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: #0dddb0;
+    color: rgb(7, 82, 45);
+    min-height: 3rem;
+
+    -webkit-animation-name: animation;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+
+    -moz-animation-name: animation;
+    -o-animation-name: animation;
+    -ms-animation-name: animation;
+    animation-name: animation;
+
+}
+
+nav{
+    height: auto;
+    display: grid;
+}
+
+#h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#buttons{
+    text-align: right;
+}
+
+.headerbtn{
+    font-size: 1.2rem;
+    background-color: #68ffde;
+    color: rgb(2, 20, 12);
+    border: 1px #68ffde solid;
+    border-radius: 5px;
+    width: 5rem;
+    height: 2rem;
+}
+
+.headerbtn:hover, .headerbtn:active{
+    cursor: pointer;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    transition: all 2s ease-in-out;
+}
+.headerbtn:focus{
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    transition: all 2s ease-in-out;
+    outline: none;
+}
+
+main{
+    -webkit-animation-name: fadeout;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    width: 100%;
+    top: 10%;
+    bottom: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   padding: 0.5rem;
+}
+
+.card{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.cardchild{
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid white;
+    text-align: left;
+}
+
+.one:hover, .two:hover, .three:hover{
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.1rem;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.item span{
+    height: 1rem;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+
+.btn{
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    background-color: teal;
+    color: whitesmoke;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #1da1f2;
+}
+
+.card-footer{
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+}
+
+.container{
+    display: grid;
+    grid-auto-flow: column;
+    margin: 1rem;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    overflow: hidden;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+}
+
+.box:hover{
+    overflow: visible;
+    background-color: #68ffde;
+    color: rgb(2, 20, 12);
+    width: fit-content;
+    height: max-content;
+    transition: all 2s ease-in-out;
+}
+
+
+footer{
+    background-color: #0dddb0;
+    color: rgb(2, 20, 12);
+    position: sticky;
+    top: 90%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 3;
+    -webkit-animation-name: lightspeedin;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes animation {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes lightspeedin {
+    0%{
+        transform: translateX(100%) skewX(-30deg);
+        opacity: 0;
+    }
+
+    60%{
+        transform: translateX(-20%) skewX(30deg);
+        opacity: 1;
+    }
+
+    80%{
+        transform: translateX(0%) skewX(-15deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(0%) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0.2;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    75%{
+        opacity: 0.7;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
