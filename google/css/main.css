@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+div{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    padding: auto;
+}
+
+
+
+h1{
+    font-size: 6rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.g{
+    color: rgb(68, 160, 236);
+}
+
+.firsto{
+    color: rgb(243, 68, 14);
+}
+
+.secondo{
+    color: goldenrod;
+}
+
+.secondg{
+    color: rgb(68, 160, 236);
+}
+
+.l{
+    color: rgb(87, 223, 24);
+}
+
+.e{
+    color: rgb(243, 68, 14);
+}
+
+.search-box{
+    text-align: center;
+    border-radius: 40px;
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.search-text{
+    width: 500px;
+    margin: 0;
+    line-height: 40px;
+    font-size: 20px;
+    border: none;
+    padding: 0%;
+    border-radius: 20px;
+}
+
+.search-text:active{
+    border-radius: 20px;
+    background-color: whitesmoke;
+    
+    
+}
+
+.add-favourite{
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+}
+
+.add-favourite:hover{
+    background-color: rgb(204, 196, 196);
+    cursor: pointer;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.favourite{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: xx-large;
+    font-weight: lighter;
+    margin: 10px 25% 0 25%;
+    text-align: center;
+    background-color: #333;
+    color: whitesmoke;
+    
+}
+
+p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.customize{
+    align-items: flex-end;
+    justify-content: end;
+    margin-left: 25%;
+}
+.customize:hover{
+    cursor: pointer;
+}
+
+.customize-button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(114, 108, 108);
+    border-radius: 20px;
+
+}
+
+.customize-button:hover{
+    cursor: pointer;
+}
+
+
